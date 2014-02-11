@@ -22,10 +22,66 @@
  * ---------------------------------------------------------------------------
  */
 
-.header-primary {}
+html, body, article, ul, dl, dt, dd {
+  border: 0;
+  display: block;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
 
-.nav-primary {}
+html {
+  font-size: 62.5%;
+}
 
-.content-primary {}
+body {
+  color: #111;
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
 
-.footer-primary {}
+a, a:visited {
+  color: #336699;
+}
+
+article {
+  margin: 3em 4em;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+dd {
+  -webkit-margin-start: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(30, 30, 30, 0.1);
+  height: 0;
+}
+
+.bidi {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) and (-webkit-max-device-pixel-ratio: 1.5), (max-device-pixel-ratio: 1.5) {
+  html {
+    font-size: 62.5%;
+  }
+
+  article {
+    width: 40%;
+  }
+}
