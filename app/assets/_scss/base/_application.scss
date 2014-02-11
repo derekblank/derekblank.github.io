@@ -28,7 +28,6 @@ html, body, article, ul, dl, dt, dd {
   font: inherit;
   margin: 0;
   padding: 0;
-  vertical-align: baseline;
 }
 
 html {
@@ -60,7 +59,7 @@ dd {
 
 hr {
   border: 0;
-  border-top: 1px solid rgba(30, 30, 30, 0.1);
+  border-top: 1px solid #ddd;
   height: 0;
 }
 
